@@ -1,0 +1,22 @@
+body {
+    background-color: #292929;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    color: #396aff;
+    animation: h1text 4s infinite;
+}
+
+@keyframes h1text {
+
+    0%,
+    100% {
+        color: #396aff;
+    }
+
+    50% {
+        color: #159957;
+    }
+}
