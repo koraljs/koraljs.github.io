@@ -1,22 +1,53 @@
-body {
+.round {
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    box-shadow: 0px 0px 10px #fff;
+                inset: 0px 0px 20px #396aff;
     background-color: #292929;
-}
-
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    color: #396aff;
-    animation: h1text 4s infinite;
-}
-
-@keyframes h1text {
-
-    0%,
-    100% {
-        color: #396aff;
-    }
-
-    50% {
-        color: #159957;
-    }
-}
+  }
+  
+  body {
+    background-color: #222222;
+    overflow: hidden;
+  }
+  
+  button {
+    border-radius: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 90px);
+    font-family: Montserrat, sans-serif;
+    background-color: #396aff;
+    animation: buttonback 2s infinite;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: all 150ms ease-in-out;
+    width: 160px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    transform: scale(1.1);
+  }
+  
+  @keyframes buttonback {
+    0%, 100%{background-color: #396aff; box-shadow: 0px 0px 30px #396aff;}
+    50%{background-color: #159957; box-shadow: 0px 0px 30px #159957;}
+  }
+  
+  @keyframes jump{
+    0%, 100%{transform: scale(1); background-color: #396aff; box-shadow: 0px 0px 30px #396aff;}
+    50%{transform: scale(18); background-color: #159957; box-shadow: 0px 0px 30px #159957;}
+  }
+  
+  .ttg {
+    animation: jump 1s infinite;
+  }
