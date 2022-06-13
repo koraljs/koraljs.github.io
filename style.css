@@ -1,4 +1,5 @@
 .round {
+<<<<<<< HEAD
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 50px);
@@ -10,14 +11,36 @@
     background-color: #292929;
 }
   
+=======
+  border-radius: 50%;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  box-shadow: 0px 0px 10px #fff;
+  inset: 0px 0px 20px #396aff;
+  background-color: #292929;
+}
+
+>>>>>>> c5c42c0b11955e2426160a5afe8f3b910f111718
 body {
   background-color: #222222;
   overflow: hidden;
 }
+<<<<<<< HEAD
   
 button {
   border-radius: 10px;
   position: absolute;
+=======
+
+button {
+  border-radius: 10px;
+  position: absolute;
+  bottom: 20px;
+  left: calc(50% - 90px);
+>>>>>>> c5c42c0b11955e2426160a5afe8f3b910f111718
   font-family: Montserrat, sans-serif;
   background-color: #396aff;
   animation: buttonback 2s infinite;
@@ -32,6 +55,7 @@ button {
   text-transform: uppercase;
 }
 
+<<<<<<< HEAD
 #jump {
   bottom: 20px;
   left: calc(50% - 90px);
@@ -103,3 +127,42 @@ button:hover {
 .inv {
   display: none;
 }
+=======
+button:hover {
+  transform: scale(1.1);
+}
+
+@keyframes buttonback {
+
+  0%,
+  100% {
+    background-color: #396aff;
+    box-shadow: 0px 0px 30px #396aff;
+  }
+
+  50% {
+    background-color: #159957;
+    box-shadow: 0px 0px 30px #159957;
+  }
+}
+
+@keyframes jump {
+
+  0%,
+  100% {
+    transform: scale(1);
+    background-color: #396aff;
+    box-shadow: 0px 0px 30px #396aff;
+  }
+
+  50% {
+    transform: scale(18);
+    background-color: #159957;
+    box-shadow: 0px 0px 30px #159957;
+  }
+}
+
+.ttg {
+  animation: jump 1s infinite;
+}
+>>>>>>> c5c42c0b11955e2426160a5afe8f3b910f111718
