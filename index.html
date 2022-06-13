@@ -4,15 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Round</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>RoundMode</title>
+    <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body id="body">
-    <div id="round" class="round"></div>
-    <button id="btn" onclick="jump()">boom</button>
+    <div id="game" class="game">
+        <div id="round" class="round"></div>
+        <button id="jump" onclick="jump()">boom</button>
+        <button id="settings" onclick="settings()">settings</button>
+        <div id="stngs" class="stngs">RoundMode - Settings
+            <ul>
+                <li>Just nothing</li>
+            </ul>
+        </div>
+        
+    </div>
 </body>
 </html>
 <script src="./main.js"></script>

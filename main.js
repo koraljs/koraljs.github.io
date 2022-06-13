@@ -7,3 +7,9 @@ function jump() {
         document.getElementById("round").classList.remove("ttg");
     }
 }
+
+function settings() {
+    document.getElementById("body").classList.toggle("back");
+    document.getElementById("stngs").classList.toggle("visible");
+    document.getElementById("jump").classList.toggle("inv");
+}
